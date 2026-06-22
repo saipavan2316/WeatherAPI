@@ -1,14 +1,14 @@
 # Weather API
 
-A Flask-based Weather API that fetches weather data from the Visual Crossing Weather API.
+A Flask Weather API using Visual Crossing Weather API.
 
 ## Project URL
 
 https://roadmap.sh/projects/weather-api-wrapper-service
-
 ## Features
 
-* Third-party API integration
+* Fetch weather data by city
+* Visual Crossing API integration
 * Environment variables
 * In-memory caching
 * Rate limiting
@@ -18,25 +18,33 @@ https://roadmap.sh/projects/weather-api-wrapper-service
 
 ```bash
 pip install -r requirements.txt
+```
+
+## Run
+
+```bash
 python app.py
 ```
 
 ## Endpoint
 
+```text
 GET /weather/<city>
+```
 
 Example:
 
-GET /weather/Delhi
+```text
+/weather/Delhi
+```
 
 Example Response:
 
+```json
 {
-"city": "Delhi",
-"conditions": "Partially cloudy",
-"humidity": 52.6,
-"temperature": 31.3
+  "city": "Delhi",
+  "conditions": "Partially cloudy",
+  "humidity": 52.6,
+  "temperature": 31.3
 }
-
-```
 ```
