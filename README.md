@@ -4,7 +4,7 @@ A Flask-based Weather API that fetches weather data from the Visual Crossing Wea
 
 ## Project URL
 
-http://127.0.0.1:5000/weather/Delhi
+https://roadmap.sh/projects/weather-api-wrapper-service
 
 ## Features
 
